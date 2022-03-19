@@ -1,3 +1,71 @@
+@font-face {
+    font-family: "Futura Md BT";
+    src: local(Futura), url(fonts/FutuMd.ttf);
+}
+
+
 body{
-    background-color: #4B4969;
+    font-family: "Futura Md BT";
+    background-color: #100E30;
+    color:white;
+    margin: 2rem 2rem;
+}
+
+.image img{
+   margin-top: 0.1rem;
+   width: 200px;
+   height: 250px;
+   float: right;
+   border-radius: 300px;
+}
+
+.passions-list ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    column-gap: 3rem;
+    row-gap: 4rem;
+}
+/* .passions-list p{
+    /* max-width: 100px;
+    max-height: 100px; */
+/* } */ 
+
+.container-progress ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    column-gap: 3rem;
+    row-gap: 4rem;
+
+}
+
+
+
+.container-progress span{
+    margin-top: 10rem;
+
+}
+
+
+.progress-bar01{
+    width: 500px;
+    height: 25px;
+    background-color: white ;
+    position: relative;
+    border-radius: 50px;
+}
+.progress-bar01 .progress-bar02{
+   position: absolute;
+   width: 500px;
+   height: 25px;
+   background-color: #CCC;
+   animation: progress-animation 3s both; 
+   border-radius: 15px;
+   
+
+}
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 90%}
 }
