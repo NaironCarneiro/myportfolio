@@ -1,8 +1,12 @@
 @font-face {
     font-family: "Futura Md BT";
     src: local(Futura), url(fonts/FutuMd.ttf);
-}
 
+}
+@font-face {  
+    font-family: "Futura Regular";
+    src: local(Futura), url(fonts/FutuMdIt.ttf);
+}
 
 body{
     font-family: "Futura Md BT";
@@ -10,13 +14,19 @@ body{
     color:white;
     margin: 2rem 2rem;
 }
+body h1{
+    font-size: 60px;
+    font-family: "Futura Regular" ;
+}
 
 .image img{
+   /* position: absolute; */
    margin-top: 0.1rem;
-   width: 200px;
-   height: 250px;
+   width: 340px;
+   height: 350px;
    float: right;
-   border-radius: 300px;
+   /* opacity: 0.6; */
+   border-radius: 50%;
 }
 
 .passions-list ul{
@@ -37,13 +47,19 @@ body{
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     column-gap: 3rem;
     row-gap: 4rem;
+}
 
+.container-progress li {
+    display: flex;
+    align-items: center;
+    
 }
 
 
 
-.container-progress span{
-    margin-top: 10rem;
+.title span{
+    margin-left: 0.1rem;
+    
 
 }
 
@@ -63,9 +79,15 @@ body{
    animation: progress-animation 3s both; 
    border-radius: 15px;
    
-
 }
+
 @keyframes progress-animation{
     0% { width: 0%; } 
     100% { width: 90%}
+}
+
+.image-languagens img{
+    height: 61px;
+    margin-right: 1.5rem;
+    width: 50px;
 }
