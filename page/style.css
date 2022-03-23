@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Futura Md BT";
-    src: local(Futura), url(fonts/FutuMd.ttf);
+    src: local(Futura), url(fonts/FuturaMediumBT.ttf);
 
 }
 @font-face {  
@@ -11,42 +11,47 @@
 body{
     font-family: "Futura Md BT";
     background-color: #100E30;
-    color:white;
+    color:#DBD6B8;
     margin: 2rem 2rem;
 }
-body h1{
-    font-size: 60px;
+h1{
+    font-size: 80px;
     font-family: "Futura Regular" ;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    margin-top: 8rem;
+    font-size: 25px;
+}
+
+.about-me p{
+    font-size: 20px;
+    max-width: repeat(auto-fit, minmax(650px, 1fr));
 }
 
 .image img{
    /* position: absolute; */
    margin-top: 0.1rem;
-   width: 340px;
-   height: 350px;
+   margin-right: 10rem;
+   width: 240px;
+   height: 250px;
    float: right;
    /* opacity: 0.6; */
    border-radius: 50%;
 }
 
-.passions-list ul{
-    list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    column-gap: 3rem;
-    row-gap: 4rem;
-}
-/* .passions-list p{
-    /* max-width: 100px;
-    max-height: 100px; */
-/* } */ 
 
 .container-progress ul{
     list-style: none;
     display: grid;
+    margin-left: -2rem;
     grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     column-gap: 3rem;
-    row-gap: 4rem;
+    row-gap: 3rem;
 }
 
 .container-progress li {
@@ -54,15 +59,10 @@ body h1{
     align-items: center;
     
 }
-
-
-
 .title span{
     margin-left: 0.1rem;
-    
 
 }
-
 
 .progress-bar01{
     width: 500px;
@@ -90,4 +90,9 @@ body h1{
     height: 61px;
     margin-right: 1.5rem;
     width: 50px;
+}
+
+.websites img{
+    width: 60px;
+    padding: 30px;
 }
