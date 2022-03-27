@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/772e4b9dbd.js" crossorigin="anonymous"></script>
     <title>Meu portifólio</title>   
 
 </head>
@@ -15,8 +16,9 @@
     <div class="image">
         <img  src="images/img.png" alt="minha foto">
     </div>
-    <h1>NAIRON <br>CARNEIRO</h1>
+    <h1 id="top">NAIRON <br>CARNEIRO</h1>
     <h2>Front-End Developer</h2>
+    <h4><a href="#competence">vá para competencias</a></h4>
    
 
     <h3>Sobre Mim</h3>
@@ -27,10 +29,9 @@
     Consigo desenvolver algoritmos em Python, Java, Javascript. Conhecimentos em Git e Github e APIs.
 </p>
 
-</div>
-   
+</div>   
   </div>
-    <h3 >Competências</h3>
+    <h3 id="competence">Competências</h3>
     <div class="container-progress">
         <ul>
             <li>        
@@ -89,77 +90,58 @@
         </ul>      
     </div>
 
-    <h3 >Perfis</h3>
-    <div class="websites">
-        <a href="https://github.com/NaironCarneiro" target="_blank"> 
-            <img src="images/github.png" alt="github"></a>
-        <a href="https://www.linkedin.com/in/nairon-santos-carneiro-7103a9157/" target="_blank">
-            <img src="images/linkedin.png" alt="Linkedin"></a>
-    </div>
+
+    <div class="container-contact">
+
+
+        <div id="div01">
+            <h3 id="contact">Contato</h3>
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <hr>
-
-    <p>Possuo conhecimentos em Desenvolvimento WEB com familiaridade em linguagem de marcação (HTML) 
-                    e Estilo de formatação de páginas WEB (CSS) e JavaScript.</p>
-
-    <p>acessar  github</a> ou <a href="https://www.linkedin.com/in/nairon-santos-carneiro-7103a9157/" target="_blank">linkedin</a> </p>
-    
-    <hr>
-
-    <h5>Competências</h5>
-    <ol>   
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>Python</li>
-    </ol>
-
-    <hr>
-
-    <h5>Estou buscando aprender</h5>
-    <ul>   
-        <li>React.js</li>
-        <li>Vue.js</li>
-        <li>Node.js</li>
-    </ul>
-
-    <hr>
-    
-    <h5>Minhas redes de contato</h5>
-    <ul>   
-        <li><a href="https://github.com/NaironCarneiro" target="_blank">Linkedin</a></li>
-        <li><a href="https://www.linkedin.com/in/nairon-santos-carneiro-7103a9157/" target="_blank">Github</a></li>
+            <form class="form" method="post"> 
+                <!-- <p> Envie uma mensagem preenchendo o formulário abaixo</p> -->
+                <div class="field">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" name="nome"  required>
+                </div>
+                
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="telefone" required>
+                </div>
         
-    </ul> -->
+                <div class="field">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea  class="message" name="mensagem" required></textarea>
+                </div>           
+                    <input class="input-send" type="submit" name="action" value="Enviar">
+            </form>
+        
+                
+        </div>
+
+        <div id="div02"> 
+            <h3>Meus contatos</h3>
+            <h5>Se você precisa de serviços web ou mobile, você pode entrar em contato comigo.</h5>
+            <div class="my-contacts">
+                <span>Email</span>
+                <p>nayronscarneiro@hotmail.com</p>
+                <span>Telefone</span>
+                <p>(99) 99649-0093</p>
+                <div class="git-linked">
+                    <a href="https://github.com/NaironCarneiro" target="_blank">
+                        <img src="images/github.png" alt="Github"></a>
+                    <a href="https://www.linkedin.com/in/nairon-santos-carneiro-7103a9157/" target="_blank">
+                        <img src="images/linkedin.png" alt="linkedin"></i></a>
+
+                </div>
+             
+            </div>    
+        </div>
+
+
+
+
+    </div>
 
 </body>
 </html>

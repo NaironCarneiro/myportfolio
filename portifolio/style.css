@@ -1,0 +1,198 @@
+@font-face {
+    font-family: "Futura Md BT";
+    src: local(Futura), url(fonts/FuturaMediumBT.ttf);
+
+}
+@font-face {  
+    font-family: "Futura Regular";
+    src: local(Futura), url(fonts/FutuMdIt.ttf);
+}
+
+body{
+    font-family: "Futura Md BT";
+    background-color: #100E30;
+    color:#DBD6B8;
+    margin: 2rem 2rem;
+}
+h1{
+    font-size: 80px;
+    font-family: "Futura Regular" ;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    margin-top: 8rem;
+    font-size: 25px;
+}
+
+.about-me p{
+    font-size: 20px;
+    max-width: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+.image img{
+   /* position: absolute; */
+   margin-top: 0.1rem;
+   margin-right: 10rem;
+   width: 240px;
+   height: 250px;
+   float: right;
+   /* opacity: 0.6; */
+   border-radius: 50%;
+}
+
+
+.container-progress ul{
+    list-style: none;
+    display: grid;
+    margin-left: -2rem;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+    column-gap: 3rem;
+    row-gap: 3rem;
+}
+
+.container-progress li {
+    display: flex;
+    align-items: center;
+    
+}
+.title span{
+    margin-left: 0.1rem;
+
+}
+
+.progress-bar01{
+    width: 500px;
+    height: 25px;
+    background-color: white ;
+    position: relative;
+    border-radius: 50px;
+}
+.progress-bar01 .progress-bar02{
+   position: absolute;
+   width: 500px;
+   height: 25px;
+   background-color: #CCC;
+   animation: progress-animation 3s both; 
+   border-radius: 15px;
+   
+}
+
+@keyframes progress-animation{
+    0% { width: 0%; } 
+    100% { width: 90%}
+}
+
+.image-languagens img{
+    height: 61px;
+    margin-right: 1.5rem;
+    width: 50px;
+}
+
+#div01{
+    display: inline-block;
+
+}
+
+#div02{
+    margin-left: 15rem;
+    display: inline-block;
+    width: 400px;  
+    /* padding-top: 15.4rem;   */
+    
+}
+
+.my-contacts {
+    text-align: left;
+    margin-top: 4rem;
+    /* align-items: center; */
+    /* align-content: flex-end; */
+
+    
+}
+
+.my-contacts span{
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+.my-contacts img{
+    margin-top: 2rem;
+    margin-left: 7rem;
+    max-width: 40px;
+    /* max-height: fit-content;     */
+
+}
+.container-contact{
+    display: flex;
+}
+
+.form{
+    display: inline-block;
+    position: relative;
+    padding-left: 100px;
+}
+
+.field{
+    margin-top: 2rem;    
+}
+
+.field label{
+    line-height: 2rem;
+}
+
+.form input{
+    color: white;
+    display: block;
+    border-radius: 5px;
+    background-color: #212C52;
+    height: 25px;
+    width: 400px;
+    border: none;
+}
+
+.form input:focus{
+    box-shadow: 0 0 0 0;
+    outline: none;
+
+}
+
+.form .message{
+    display: block;
+    border-radius: 5px;
+    background-color: #212C52;
+    height: 100px;
+    width: 400px;
+    border: none;
+    outline:none;
+    color: white;
+
+}
+
+.form .button-form{
+    background-color: #4f65b3;
+    outline: none;
+
+}
+
+.form .input-send{
+    margin-left: auto;
+    background-color: #DCD3FF;
+    color: black;
+    border-radius: 5px;
+    margin-top: 2rem;
+    height: 35px;
+    width: 110px;
+    cursor: pointer;
+
+}
+.form .input-send:hover{
+    background-color: #a3a6ad;
+    transition: all 0.2s ease-in;
+    outline: none;
+}
