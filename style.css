@@ -1,51 +1,105 @@
 @font-face {
     font-family: "Futura Md BT";
-    src: local(Futura), url(fonts/FuturaMediumBT.ttf);
+    src: local(Futura), url(fonts/Roboto-Medium.ttf);
 
 }
 @font-face {  
     font-family: "Futura Regular";
-    src: local(Futura), url(fonts/FutuMdIt.ttf);
+    src: local(Futura), url(fonts/Roboto-Regular.ttf);
 }
+
 
 body{
     font-family: "Futura Md BT";
     background-color: #100E30;
     color:#DBD6B8;
-    margin: 2rem 2rem;
+    margin: 0 auto;
+    padding-top: 0 !important;
 }
+
+nav{
+    padding: 0;
+    margin-top: -8rem;
+    width: 100%;
+    display: flex;
+    position: fixed ;
+    background-color: #2720a8;
+    z-index: 99;
+    justify-content: flex-end;
+    /* margin-left: -3rem; */
+}
+
+nav li{
+    margin: 0rem 2rem;
+    float: right;
+    list-style: none;
+    margin-left: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: #b7bcca;
+    transition: all 0.2s ease-in;
+}
+
+nav a:active{
+    color: #4f65b3;
+} 
+
+
 h1{
+    margin: 2rem;
+    margin-top: 8rem;
+    padding: 20px 0;
     font-size: 80px;
     font-family: "Futura Regular" ;
 }
 
 h2{
+    margin: 2rem;
     font-size: 20px;
 }
-
-h3{
+.contact-title{
+    margin: 0rem;
     margin-top: 8rem;
     font-size: 25px;
 }
 
+h3{
+    margin: 2rem;
+    margin-top: 8rem;
+    font-size: 25px;
+}
+
+
+
 .about-me p{
+    margin: 2rem;
     font-size: 20px;
+    text-align: justify;
     max-width: repeat(auto-fit, minmax(550px, 1fr));
 }
 
 .image img{
+    margin: 2rem;
+    display: block;
    /* position: absolute; */
    margin-top: 0.1rem;
-   margin-right: 10rem;
-   width: 240px;
-   height: 250px;
+   margin-right: 1rem;
+   width: 500px;
+   height: 500px;
    float: right;
-   /* opacity: 0.6; */
    border-radius: 50%;
+   border: 3px solid white;
 }
 
 
 .container-progress ul{
+    margin: 2rem;
     list-style: none;
     display: grid;
     margin-left: -2rem;
@@ -55,6 +109,7 @@ h3{
 }
 
 .container-progress li {
+    margin: 0rem 2rem 0rem 2rem;
     display: flex;
     align-items: center;
     
@@ -93,6 +148,7 @@ h3{
 }
 
 #div01{
+    margin: 0rem 2rem;
     display: inline-block;
 
 }
@@ -119,8 +175,6 @@ h3{
     font-size: large;
 }
 
-
-
 .my-contacts img{
     margin-top: 2rem;
     margin-left: 7rem;
@@ -130,6 +184,7 @@ h3{
 }
 .container-contact{
     display: flex;
+    align-items: flex-start;
 }
 
 .form{
