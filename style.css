@@ -245,6 +245,10 @@ h3{
     
 }
 
+#div01 #contact{
+    margin-left: auto;
+}
+
 .my-contacts {
     text-align: left;
     margin-top: 4rem;
