@@ -5,6 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu portifólio</title>
+<script>
+    function confirmAlert(){
+        if(document.getElementById("name").value == "" ||
+        document.getElementById("email").value == "" ||
+        document.getElementById("message").value == ""){
+
+        alert('Por favor, preencha todos os campos');
+
+        } else{
+            
+        alert("A mensagem de contato foi enviada para nairon carneiro");
+        }
+    }
+</script>
+
 </head>
 <link rel="stylesheet" href="style.css">
 
@@ -153,11 +168,10 @@
         
                 <div class="field">
                     <label for="mensagem">Mensagem</label>
-                    <textarea  class="message" name="message" required></textarea>
+                    <textarea  class="message" id="message" name="message" required></textarea>
                 </div>           
-                    <input class="input-send" type="submit" name="action" value="Enviar">
+                    <input class="input-send" type="submit" onclick="confirmAlert()" name="action" value="Enviar">
             </form>
-        
                 
         </div>
 
