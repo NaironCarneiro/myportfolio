@@ -15,6 +15,7 @@ body{
     color:#DBD6B8;
     margin: 0 auto;
     padding-top: 0 !important;
+    padding-bottom: 2rem;
 }
 
 nav{
@@ -122,23 +123,83 @@ h3{
 .progress-bar01{
     width: 500px;
     height: 25px;
-    background-color: white ;
+    background-color: white ; 
     position: relative;
-    border-radius: 50px;
+    border-radius: 50px; 
 }
 .progress-bar01 .progress-bar02{
    position: absolute;
    width: 500px;
    height: 25px;
    background-color: #CCC;
-   animation: progress-animation 3s both; 
+   animation: progress-animation01 3s both; 
    border-radius: 15px;
    
 }
 
-@keyframes progress-animation{
+@keyframes progress-animation01{
     0% { width: 0%; } 
     100% { width: 90%}
+}
+
+.progress-bar01 .progress-bar03{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: #CCC;
+    animation: progress-animation02 3s both; 
+    border-radius: 15px;
+    
+ }
+
+ @keyframes progress-animation02{
+    0% { width: 0%; } 
+    100% { width: 70%}
+}
+
+.progress-bar01 .progress-bar04{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: #CCC;
+    animation: progress-animation03 3s both; 
+    border-radius: 15px;
+    
+ }
+
+ @keyframes progress-animation03{
+    0% { width: 0%; }
+    100% { width: 40%}
+}
+
+.progress-bar01 .progress-bar05{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: #CCC;
+    animation: progress-animation04 3s both; 
+    border-radius: 15px;
+    
+ }
+
+ @keyframes progress-animation04{
+    0% { width: 0%; }
+    100% { width: 70%}
+}
+
+.progress-bar01 .progress-bar06{
+    position: absolute;
+    width: 500px;
+    height: 25px;
+    background-color: #CCC;
+    animation: progress-animation05 3s both; 
+    border-radius: 15px;
+    
+ }
+
+ @keyframes progress-animation05{
+    0% { width: 0%; }
+    100% { width: 40%}
 }
 
 .image-languagens img{

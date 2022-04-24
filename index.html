@@ -51,9 +51,10 @@
                     <div class="title">
                         <span>80%</span>
                     </div> 
+                    <!-- <progress class="progress-bar01" value="80" max="100">70 %</progress> -->
                     <div class="progress-bar01">
                         <div class="progress-bar02"></div>
-                    </div>
+                    </div> 
                 </div>
                
             </li>
@@ -64,9 +65,10 @@
                 <div class="all">                       
                     <div class="title">
                         <span>80%</span>
-                    </div> 
+                    </div>
+                    <!-- <progress class="progress-bar01" value="80" max="100">70 %</progress>  -->
                     <div class="progress-bar01">
-                        <div class="progress-bar02"></div>
+                        <div class="progress-bar02"></div> -->
                     </div>
                 </div>
             </li>
@@ -77,9 +79,24 @@
                 <div class="all">                       
                     <div class="title">
                         <span>70%</span>
-                    </div> 
+                    </div>
+                    <!-- <progress class="progress-bar01" value="70" max="100">70 %</progress>  -->
                     <div class="progress-bar01">
-                        <div class="progress-bar02"></div>
+                        <div class="progress-bar03"></div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="image-languagens">
+                    <img  src="images/react.png" alt="reactJs">
+                </div>   
+                <div class="all">                       
+                    <div class="title">
+                        <span>40%</span>
+                    </div>
+                    <!-- <progress class="progress-bar01" value="50" max="100">70 %</progress>  -->
+                    <div class="progress-bar01">
+                        <div class="progress-bar06"></div>
                     </div>
                 </div>
             </li>
@@ -89,13 +106,29 @@
                 </div>   
                 <div class="all">                       
                     <div class="title">
-                        <span>50%</span>
-                    </div> 
+                        <span>40%</span>
+                    </div>
+                    <!-- <progress class="progress-bar01" value="50" max="100">70 %</progress>  -->
                     <div class="progress-bar01">
-                        <div class="progress-bar02"></div>
+                        <div class="progress-bar04"></div>
                     </div>
                 </div>
             </li>
+            <li>
+                <div class="image-languagens">
+                    <img  src="images/logo_github2.png" alt="github">
+                </div>   
+                <div class="all">                       
+                    <div class="title">
+                        <span>70%</span>
+                    </div>
+                    <!-- <progress class="progress-bar01" value="50" max="100">70 %</progress>  -->
+                    <div class="progress-bar01">
+                        <div class="progress-bar05"></div>
+                    </div>
+                </div>
+            </li>
+           
         </ul>      
     </div>
 
@@ -104,21 +137,23 @@
         <div id="div01">
             <h3 id="contact">Contato</h3>
     
-            <form class="form" method="post"> 
+            <form class="form" action="https://api.staticforms.xyz/submit" method="POST"> 
+                <input type="hidden" name="accessKey" value="5fa533ec-05e7-43e4-9f13-34cbedf9144a"> 
+                <input type="hidden" name="redirectTo" value="https://example.com/contact/success">
                 <!-- <p> Envie uma mensagem preenchendo o formulário abaixo</p> -->
                 <div class="field">
                     <label for="name">Nome</label>
-                    <input type="text" id="name" name="nome"  required>
+                    <input type="text" id="name" name="name"  required>
                 </div>
                 
                 <div class="field">
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="telefone" required>
+                    <input type="text" id="email" name="email" required>
                 </div>
         
                 <div class="field">
                     <label for="mensagem">Mensagem</label>
-                    <textarea  class="message" name="mensagem" required></textarea>
+                    <textarea  class="message" name="message" required></textarea>
                 </div>           
                     <input class="input-send" type="submit" name="action" value="Enviar">
             </form>
