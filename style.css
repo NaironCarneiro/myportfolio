@@ -99,6 +99,29 @@ h3{
 }
 
 
+.projects{
+    margin: 4rem;
+    height: 150px;
+    width: auto;
+    border: 1px solid white;
+    padding: 1rem 2rem;
+}
+.projects h4{
+    margin-top: auto;
+    font-size: 22px;
+}
+.projects a{
+    text-decoration: none;
+    color: rgb(53, 53, 182);
+    line-height: 5rem;
+
+}
+
+.projects a:hover{
+    color: rgb(33, 49, 121);
+    transition: all 0.2s ease-in;
+}
+
 .container-progress ul{
     margin: 2rem;
     list-style: none;
